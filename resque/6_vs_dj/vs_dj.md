@@ -36,3 +36,15 @@
 * There is not a lot failure / chaos
 * You want to easily throw anything on the queue
 * You don't want to setup Redis
+
+!SLIDE bullets
+
+# Performance - Enqueueing Jobs
+
+
+* delayed job - 200 jobs/sec
+* rabbitmq - 2500 jobs/sec
+* resque - 3800 jobs/sec
+* beanstalk - 9000 jobs/sec
+
+*source: http://adamblog.heroku.com/past/2010/4/24/beanstalk_a_simple_and_fast_queueing_backend/
