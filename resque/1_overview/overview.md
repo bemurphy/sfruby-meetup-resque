@@ -22,7 +22,6 @@
 # Why Redis?
 
 * Atomic push and pop
-* O(1) push and pop
 * High visibility
 * Modify existing queue in place
 
@@ -50,9 +49,9 @@
 
 # Signals
 
-* `TERM`
-* `QUIT`
-* `USR1`
+* `TERM/9` - Shutdown immediately, stop processing jobs.
+* `QUIT/3` - Shutdown after the current job has finished processing.
+* `USR1/30` - Kill the forked child immediately, continue processing jobs.
 
 !SLIDE bullets incremental
 
